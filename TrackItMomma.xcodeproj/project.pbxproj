@@ -11,6 +11,7 @@
 		3161F32E2808E9CD00770CD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161F32D2808E9CD00770CD6 /* ContentView.swift */; };
 		3161F3302808E9CE00770CD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3161F32F2808E9CE00770CD6 /* Assets.xcassets */; };
 		3161F3332808E9CE00770CD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3161F3322808E9CE00770CD6 /* Preview Assets.xcassets */; };
+		3161F33A2808EA9000770CD6 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161F3392808EA9000770CD6 /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		3161F32D2808E9CD00770CD6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3161F32F2808E9CE00770CD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3161F3322808E9CE00770CD6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3161F3392808EA9000770CD6 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,9 @@
 		3161F32A2808E9CD00770CD6 /* TrackItMomma */ = {
 			isa = PBXGroup;
 			children = (
-				3161F32B2808E9CD00770CD6 /* TrackItMommaApp.swift */,
+				3161F3392808EA9000770CD6 /* MenuView.swift */,
 				3161F32D2808E9CD00770CD6 /* ContentView.swift */,
+				3161F32B2808E9CD00770CD6 /* TrackItMommaApp.swift */,
 				3161F32F2808E9CE00770CD6 /* Assets.xcassets */,
 				3161F3312808E9CE00770CD6 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3161F32E2808E9CD00770CD6 /* ContentView.swift in Sources */,
+				3161F33A2808EA9000770CD6 /* MenuView.swift in Sources */,
 				3161F32C2808E9CD00770CD6 /* TrackItMommaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
