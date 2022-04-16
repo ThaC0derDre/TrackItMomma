@@ -10,7 +10,7 @@ import SwiftUI
 
 
 struct PumpView: View {
-    @StateObject var realmManager   = PRealmManager()
+    @StateObject var realmManager   = RealmManager()
     @State private var startTime    = ""
     @State private var pumpAmount   = 10
     @State private var xPumpAmount  = 12
@@ -108,7 +108,7 @@ struct PumpView: View {
             .cornerRadius(450)
             .onTapGesture {
                 if startTime != "" {
-                    realmManager.addTime(startTime: startTime, duration: pumpAmount, date: getCurrentDate(), xDuration: sameTime ? nil : xPumpAmount)
+                    realmManager.addPumpTime(startTime: startTime, duration: pumpAmount, date: getCurrentDate(), xDuration: sameTime ? nil : xPumpAmount)
                     
                     saved = true
                     withAnimation {

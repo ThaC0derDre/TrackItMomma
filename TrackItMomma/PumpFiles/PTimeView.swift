@@ -9,7 +9,7 @@ import SwiftUI
 import RealmSwift
 
 struct PTimeView: View {
-        @EnvironmentObject var realmManager: PRealmManager
+        @EnvironmentObject var realmManager: RealmManager
         var body: some View {
             VStack{
                 Text("My times")
@@ -17,14 +17,14 @@ struct PTimeView: View {
                     .padding()
                     .frame(maxWidth: .infinity, alignment: .leading)
                 List{
-                    ForEach(realmManager.times, id: \.id) {
+                    ForEach(realmManager.pumpTimes, id: \.id) {
                         time in
                         if !time.isInvalidated{
                             PTimeRow(startTime: time.startTime, duration: time.duration, date: time.date, xDuration: time.xDuration ?? nil)
                             
                                 .swipeActions(edge: .trailing){
                                     Button(role: .destructive) {
-                                        realmManager.deleteTimes(id: time.id)
+                                        realmManager.deletePumpTime(id: time.id)
                                     } label: {
                                         Label("Delete", systemImage: "trash")
                                     }

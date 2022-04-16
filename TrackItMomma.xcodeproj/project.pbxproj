@@ -20,7 +20,6 @@
 		3161F3482808F47400770CD6 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3161F3472808F47400770CD6 /* RealmSwift */; };
 		3161F34B2808F48F00770CD6 /* PRealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161F34A2808F48F00770CD6 /* PRealmManager.swift */; };
 		3161F34D2808F4B400770CD6 /* Times.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161F34C2808F4B400770CD6 /* Times.swift */; };
-		3161F34F2809001300770CD6 /* LRealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161F34E2809001300770CD6 /* LRealmManager.swift */; };
 		3161F352280900D000770CD6 /* LatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161F351280900D000770CD6 /* LatchView.swift */; };
 		3161F3542809016300770CD6 /* LTimeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161F3532809016300770CD6 /* LTimeRow.swift */; };
 		3161F356280901F000770CD6 /* LTimeTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161F355280901F000770CD6 /* LTimeTrackerView.swift */; };
@@ -41,7 +40,6 @@
 		3161F3422808F42400770CD6 /* MinutesPumpedSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinutesPumpedSection.swift; sourceTree = "<group>"; };
 		3161F34A2808F48F00770CD6 /* PRealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRealmManager.swift; sourceTree = "<group>"; };
 		3161F34C2808F4B400770CD6 /* Times.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Times.swift; sourceTree = "<group>"; };
-		3161F34E2809001300770CD6 /* LRealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRealmManager.swift; sourceTree = "<group>"; };
 		3161F351280900D000770CD6 /* LatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatchView.swift; sourceTree = "<group>"; };
 		3161F3532809016300770CD6 /* LTimeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTimeRow.swift; sourceTree = "<group>"; };
 		3161F355280901F000770CD6 /* LTimeTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTimeTrackerView.swift; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 			children = (
 				3161F34A2808F48F00770CD6 /* PRealmManager.swift */,
 				3161F34C2808F4B400770CD6 /* Times.swift */,
-				3161F34E2809001300770CD6 /* LRealmManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -215,7 +212,6 @@
 				3161F3542809016300770CD6 /* LTimeRow.swift in Sources */,
 				3161F32E2808E9CD00770CD6 /* ContentView.swift in Sources */,
 				3161F34B2808F48F00770CD6 /* PRealmManager.swift in Sources */,
-				3161F34F2809001300770CD6 /* LRealmManager.swift in Sources */,
 				3161F33A2808EA9000770CD6 /* MenuView.swift in Sources */,
 				3161F34D2808F4B400770CD6 /* Times.swift in Sources */,
 				3161F356280901F000770CD6 /* LTimeTrackerView.swift in Sources */,

@@ -11,7 +11,7 @@ import RealmSwift
 
 struct LatchView: View {
     
-    @StateObject var realmManager = LRealmManager()
+    @StateObject var realmManager = RealmManager()
     
     
     @State private var startTime        = ""

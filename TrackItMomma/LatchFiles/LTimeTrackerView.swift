@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TrackTimeView: View {
-    @EnvironmentObject var  realmManager: LRealmManager
+    @EnvironmentObject var  realmManager: RealmManager
     @Environment(\.dismiss) var dismiss
     @State private var lastFedAt    = ""
     @State private var durationFed  = ""
