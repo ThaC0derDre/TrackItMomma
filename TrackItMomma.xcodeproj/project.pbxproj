@@ -18,8 +18,14 @@
 		3161F3432808F42400770CD6 /* MinutesPumpedSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161F3422808F42400770CD6 /* MinutesPumpedSection.swift */; };
 		3161F3462808F47400770CD6 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 3161F3452808F47400770CD6 /* Realm */; };
 		3161F3482808F47400770CD6 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3161F3472808F47400770CD6 /* RealmSwift */; };
-		3161F34B2808F48F00770CD6 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161F34A2808F48F00770CD6 /* RealmManager.swift */; };
+		3161F34B2808F48F00770CD6 /* PRealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161F34A2808F48F00770CD6 /* PRealmManager.swift */; };
 		3161F34D2808F4B400770CD6 /* Times.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161F34C2808F4B400770CD6 /* Times.swift */; };
+		3161F34F2809001300770CD6 /* LRealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161F34E2809001300770CD6 /* LRealmManager.swift */; };
+		3161F352280900D000770CD6 /* LatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161F351280900D000770CD6 /* LatchView.swift */; };
+		3161F3542809016300770CD6 /* LTimeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161F3532809016300770CD6 /* LTimeRow.swift */; };
+		3161F356280901F000770CD6 /* LTimeTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161F355280901F000770CD6 /* LTimeTrackerView.swift */; };
+		3161F3582809022400770CD6 /* LButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161F3572809022400770CD6 /* LButton.swift */; };
+		3161F35A2809025800770CD6 /* LTimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3161F3592809025800770CD6 /* LTimeFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +39,14 @@
 		3161F33E2808F2C300770CD6 /* PTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTimeView.swift; sourceTree = "<group>"; };
 		3161F3402808F3D400770CD6 /* PTimeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTimeRow.swift; sourceTree = "<group>"; };
 		3161F3422808F42400770CD6 /* MinutesPumpedSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinutesPumpedSection.swift; sourceTree = "<group>"; };
-		3161F34A2808F48F00770CD6 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		3161F34A2808F48F00770CD6 /* PRealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRealmManager.swift; sourceTree = "<group>"; };
 		3161F34C2808F4B400770CD6 /* Times.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Times.swift; sourceTree = "<group>"; };
+		3161F34E2809001300770CD6 /* LRealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRealmManager.swift; sourceTree = "<group>"; };
+		3161F351280900D000770CD6 /* LatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatchView.swift; sourceTree = "<group>"; };
+		3161F3532809016300770CD6 /* LTimeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTimeRow.swift; sourceTree = "<group>"; };
+		3161F355280901F000770CD6 /* LTimeTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTimeTrackerView.swift; sourceTree = "<group>"; };
+		3161F3572809022400770CD6 /* LButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LButton.swift; sourceTree = "<group>"; };
+		3161F3592809025800770CD6 /* LTimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTimeFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +81,7 @@
 		3161F32A2808E9CD00770CD6 /* TrackItMomma */ = {
 			isa = PBXGroup;
 			children = (
+				3161F350280900B000770CD6 /* LatchFiles */,
 				3161F3492808F47F00770CD6 /* Managers */,
 				3161F33D2808F28300770CD6 /* PumpFiles */,
 				3161F3392808EA9000770CD6 /* MenuView.swift */,
@@ -102,10 +115,23 @@
 		3161F3492808F47F00770CD6 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				3161F34A2808F48F00770CD6 /* RealmManager.swift */,
+				3161F34A2808F48F00770CD6 /* PRealmManager.swift */,
 				3161F34C2808F4B400770CD6 /* Times.swift */,
+				3161F34E2809001300770CD6 /* LRealmManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		3161F350280900B000770CD6 /* LatchFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3161F351280900D000770CD6 /* LatchView.swift */,
+				3161F3532809016300770CD6 /* LTimeRow.swift */,
+				3161F355280901F000770CD6 /* LTimeTrackerView.swift */,
+				3161F3572809022400770CD6 /* LButton.swift */,
+				3161F3592809025800770CD6 /* LTimeFormatter.swift */,
+			);
+			path = LatchFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,14 +211,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3161F35A2809025800770CD6 /* LTimeFormatter.swift in Sources */,
+				3161F3542809016300770CD6 /* LTimeRow.swift in Sources */,
 				3161F32E2808E9CD00770CD6 /* ContentView.swift in Sources */,
-				3161F34B2808F48F00770CD6 /* RealmManager.swift in Sources */,
+				3161F34B2808F48F00770CD6 /* PRealmManager.swift in Sources */,
+				3161F34F2809001300770CD6 /* LRealmManager.swift in Sources */,
 				3161F33A2808EA9000770CD6 /* MenuView.swift in Sources */,
 				3161F34D2808F4B400770CD6 /* Times.swift in Sources */,
+				3161F356280901F000770CD6 /* LTimeTrackerView.swift in Sources */,
 				3161F33F2808F2C300770CD6 /* PTimeView.swift in Sources */,
+				3161F3582809022400770CD6 /* LButton.swift in Sources */,
 				3161F33C2808F1F800770CD6 /* PumpView.swift in Sources */,
 				3161F3412808F3D400770CD6 /* PTimeRow.swift in Sources */,
 				3161F3432808F42400770CD6 /* MinutesPumpedSection.swift in Sources */,
+				3161F352280900D000770CD6 /* LatchView.swift in Sources */,
 				3161F32C2808E9CD00770CD6 /* TrackItMommaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

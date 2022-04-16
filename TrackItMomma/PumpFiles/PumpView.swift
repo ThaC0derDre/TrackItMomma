@@ -10,7 +10,7 @@ import SwiftUI
 
 
 struct PumpView: View {
-    @StateObject var realmManager   = RealmManager()
+    @StateObject var realmManager   = PRealmManager()
     @State private var startTime    = ""
     @State private var pumpAmount   = 10
     @State private var xPumpAmount  = 12
@@ -81,11 +81,16 @@ struct PumpView: View {
                 showTimeV = true
             }
         }
-        
+        .onAppear {
+            UITableView.appearance().backgroundColor = UIColor.clear
+            UITableViewCell.appearance().backgroundColor = UIColor.clear
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+        .background(Color(hue: 0.086, saturation: 0.141, brightness: 0.972))
         .animation(.default, value: sameTime)
         .navigationTitle("Pump")
         .navigationBarTitleDisplayMode(.inline)
-        .preferredColorScheme(.dark)
+        .preferredColorScheme(.light)
         .sheet(isPresented: $showTimeV) {
             PTimeView()
                 .environmentObject(realmManager)

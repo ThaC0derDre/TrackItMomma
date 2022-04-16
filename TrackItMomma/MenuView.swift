@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct MenuView: View {
-    @State private var showMenu = true
-    @State private var showPumpView = false
+    @State private var showMenu         = true
+    @State private var showPumpView     = false
+    @State private var showLatchView    = false
+    
     var body: some View {
         NavigationView{
             
             HStack(spacing: 0){
                 
                 ZStack{
-                    // Menu
+                    //MARK: - Menu's
+
                     Color.primary.opacity(showMenu ? 0.9 : 0.0)
                     
                     VStack{
@@ -33,7 +36,10 @@ struct MenuView: View {
                         
                         
                         Menu("LATCH"){
-                            // default to screen, option to view tracked times.
+                            // default to screen, option to view tracked times, and start timer?
+                            
+                        } primaryAction: {
+                            showLatchView.toggle()
                         }
                         .padding()
                         
@@ -60,7 +66,8 @@ struct MenuView: View {
                 
                 
                 VStack{
-                    //Content View
+                    //MARK: - ContentView
+
                     HStack{
                         Button(){
                             showMenu.toggle()
@@ -85,6 +92,9 @@ struct MenuView: View {
                     //MARK: - Navigation Links
 
                     NavigationLink(destination: PumpView(), isActive: $showPumpView){
+                        EmptyView()
+                    }
+                    NavigationLink(destination: LatchView(), isActive: $showLatchView){
                         EmptyView()
                     }
                 }

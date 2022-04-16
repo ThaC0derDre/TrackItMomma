@@ -8,10 +8,10 @@
 import Foundation
 import RealmSwift
 
-class RealmManager: ObservableObject {
+class PRealmManager: ObservableObject {
     private(set) var localRealm: Realm?
-    @Published private(set) var times:[Times] = []
-    var dates: [Times]{
+    @Published private(set) var times:[PTimes] = []
+    var dates: [PTimes]{
         times.filter { $0.date == ""}
     }
     
@@ -38,7 +38,7 @@ class RealmManager: ObservableObject {
         if let localRealm = localRealm {
             do{
                 try localRealm.write{
-                    let newTime = Times(value: ["startTime": startTime, "duration": duration, "date": date, "xDuration": xDuration ?? nil])
+                    let newTime = PTimes(value: ["startTime": startTime, "duration": duration, "date": date, "xDuration": xDuration ?? nil])
                     localRealm.add(newTime)
                     getTimes()
                 }
@@ -52,7 +52,7 @@ class RealmManager: ObservableObject {
     
     func getTimes() {
         if let localRealm = localRealm {
-            let allTimes = localRealm.objects(Times.self).sorted(byKeyPath: "id", ascending: false)
+            let allTimes = localRealm.objects(PTimes.self).sorted(byKeyPath: "id", ascending: false)
             times = []
             allTimes.forEach { time in
                 times.append(time)
@@ -63,7 +63,7 @@ class RealmManager: ObservableObject {
     func deleteTimes(id: ObjectId) {
         if let localRealm = localRealm {
             do {
-                let timeToDelete = localRealm.objects(Times.self).filter(NSPredicate(format: "id == %@", id))
+                let timeToDelete = localRealm.objects(PTimes.self).filter(NSPredicate(format: "id == %@", id))
                 guard !timeToDelete.isEmpty else { return }
                 
                 try localRealm.write{

@@ -9,7 +9,7 @@ import SwiftUI
 import RealmSwift
 
 struct PTimeView: View {
-        @EnvironmentObject var realmManager: RealmManager
+        @EnvironmentObject var realmManager: PRealmManager
         var body: some View {
             VStack{
                 Text("My times")

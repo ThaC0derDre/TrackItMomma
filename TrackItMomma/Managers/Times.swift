@@ -8,11 +8,19 @@
 import Foundation
 import RealmSwift
 
-class Times: Object, ObjectKeyIdentifiable {
+class PTimes: Object, ObjectKeyIdentifiable {
     @Persisted(primaryKey: true) var id: ObjectId
     @Persisted var startTime    = ""
     @Persisted var duration: Int
     @Persisted var date         = ""
     @Persisted var xDuration: Int?
-    
 }
+
+
+class LTime: Object, ObjectKeyIdentifiable {
+    @Persisted(primaryKey: true) var id: ObjectId
+    @Persisted var lastFed      = ""
+    @Persisted var duration     = ""
+    @Persisted var currentDate  = ""
+}
+
